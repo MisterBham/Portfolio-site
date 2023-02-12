@@ -1,0 +1,136 @@
+:root {
+    --light: #FDFBF9;
+    --dark: #2E3347;
+    --contrast: #99D1D5;
+}
+
+/* Element selectors */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #3B3E79;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark);
+}
+
+header h1 {
+font-size: 250%;
+background-color: #99D1D5;
+margin: 1% 1% 1% 7%;
+color: var(--dark);
+}
+
+header h1:before {
+    content: "---";
+    color: #99D1D5;
+}
+
+header a {
+    font-size: 105%;
+    color: #99D1D5;
+    border-bottom: 1px solid #99D1D5;
+    text-decoration: none;
+}
+
+header a::before, header a::after {
+    content: "-";
+    color: var(--dark);
+}
+
+nav {
+    margin-right: 7%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+header nav ul li {
+    margin: 2%;
+    display: inline-block;
+}
+
+main {
+    margin: 1% 5% 1% 10%;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    display: flex;
+    margin: 3% 0; 
+}
+
+/* Class specific selectors */
+.hero-img {
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 1%;
+    background-image: url("../images/ocean.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero-txt {
+  background-color: #99D1D5;
+  color: var(--dark);
+  margin: 0 1% 1% 0;
+  font-size: 175%;
+}
+
+.outer-container {
+    width: 15%;
+    border-right: 4px solid;
+    padding-right: 1%;
+}
+
+.outer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 250%;
+    padding-right: 0.5%;
+}
+
+.inner {
+    margin-left: 3%;
+    width: 85%;
+    
+}
+
+.inner ul {
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-around;
+    /* (2 * 250%) due to .outer having 2 divs */
+    line-height: 500%;
+}
+
+.inner ul a {
+    font-size: 105%;
+    color: var(--dark);
+    border-bottom: 1px solid var(--dark);
+    text-decoration: none;
+}
+
+.inner ul a::before, .inner ul a::after {
+    content: "-";
+    color: var(--light);
+}
+
+
+
+/* Need to figure out how to make the container larger than the contents. On [h1], need background-color to the left, on [header a], need lower border to be a bit left and right of text. On [.outer], need to get breaked 2nd line to also move right. */
