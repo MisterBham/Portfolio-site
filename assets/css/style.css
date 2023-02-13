@@ -25,12 +25,8 @@ header h1 {
 font-size: 250%;
 background-color: var(--contrast);
 margin: 1% 1% 1% 7%;
+padding-left: 2%;
 color: var(--dark);
-}
-
-header h1:before {
-    content: "---";
-    color: var(--contrast);
 }
 
 header a {
@@ -156,7 +152,11 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     border: 3px solid var(--contrast);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
+
 .work-cards:nth-child(1) {
     width: 100%;
 }
@@ -175,6 +175,19 @@ p {
     cursor: pointer;
 }
 
+.work-cards span {
+    font-size: 65%;
+}
+
+.work-cards-text {
+    background-color: var(--contrast);
+    color: var(--dark);
+    margin: 0 0% 1% 0;
+    font-size: 125%;
+    white-space: nowrap;
+    padding: 8px;
+}
+
 /* ID selectors */
 #prework-study-guide {
     background-image: url("../images/prework-study-guide.jpg"); 
@@ -188,4 +201,29 @@ p {
     background-image: url("../images/coming-soon.jpg");
 }
 
-/* Need to figure out how to make the container larger than the contents. On [h1], need background-color to the left, on [header a], need lower border to be a bit left and right of text. On [.outer], need to get breaked 2nd line to also move right. */
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 98%;
+    }
+
+    #contact-me .inner ul {
+        flex-direction: column;
+        line-height: 1.5;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        font-size: 95%;
+    }
+
+    header h1 {
+        max-width: 25%;
+        text-align: end;
+    }
+
+    nav {
+        margin-right: 10%;
+    }
+}
