@@ -18,14 +18,15 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
     background-color: var(--dark);
 }
 
 header h1 {
 font-size: 250%;
 background-color: var(--contrast);
-margin: 1% 1% 1% 7%;
-padding-left: 2%;
+margin: 1% 1% 1% 0%;
+padding-left: 4%;
 color: var(--dark);
 }
 
@@ -42,7 +43,7 @@ header a::before, header a::after {
 }
 
 nav {
-    margin-right: 7%;
+    margin-right: 9%;
     display: flex;
     align-items: center;
     white-space: nowrap;
@@ -54,7 +55,7 @@ header nav ul li {
 }
 
 main {
-    margin: 1% 5% 1% 10%;
+    margin: 1% 5% 1% 5%;
 }
 
 section {
@@ -87,7 +88,7 @@ p {
 .hero-txt {
   background-color: var(--contrast);
   color: var(--dark);
-  margin: 0 1% 1% 0;
+  margin: 0 5% 1% 0;
   font-size: 175%;
 }
 
@@ -201,9 +202,14 @@ p {
     background-image: url("../images/coming-soon.jpg");
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
+   /* 769px — 1024px: Small screens, laptops */
     * {
         font-size: 98%;
+    }
+
+    .outer {
+        font-size: 150%;
     }
 
     #contact-me .inner ul {
@@ -213,17 +219,65 @@ p {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+    /* 320px — 480px: Mobile devices */
+    /* 481 - 768: Ipads, Tablets */
     * {
         font-size: 95%;
     }
-
-    header h1 {
-        max-width: 25%;
-        text-align: end;
+    header {
+        flex-wrap: wrap;
     }
-
-    nav {
-        margin-right: 10%;
+    header h1, nav {
+        min-width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 1% 0 1% 0;
+        padding: 0;
+        white-space: normal;
+    }
+    header a::before, header a::after {
+        content: "";
+        color: var(--dark);
+    }
+    header ul li {
+        width: 100%;
+    }
+        nav {
+        margin-top: 0;
+    }
+    main {
+        margin: 0;
+    }
+    article {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero-txt {
+        margin: 0 5% 5% 0;
+    }
+    .outer-container {
+        width: 100%;
+        border-bottom: 4px solid;
+        border-right: 0;
+        padding-right: 0;
+    }
+    .outer {
+        justify-content: center;
+        width: 100%;
+        font-size: 150%;
+        padding-right: 0;
+    }
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .inner {
+        width: 95%;
+        margin: 2% 0;
+    }
+    .work-cards {
+        width: 100%;
     }
 }
