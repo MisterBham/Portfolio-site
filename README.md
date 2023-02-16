@@ -6,7 +6,7 @@ Module 2 Challenge - Professional Portfolio
 
 Link to live application: https://misterbham.github.io/Porfolio-site/
 
-My motivation in this repo is to create a professional portfolio site that I can continually add to as I create more online content. The intent is to showcase my skills and talents for prospective employers looking to fill open positions.
+My motivation in this repo is to create a professional portfolio site that I can continually add to as I create more online content. The intent is to feature my skills and talents for prospective employers looking to fill open positions.
 
 This project was built to highlight my work thus far, and the thought processes / purposes that each was built. It will also serve as a showcase that I can build upon for all future work performed. It should very clearly demonstrate how my proficiency have increased over time and show competency.
 
