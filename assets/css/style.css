@@ -190,6 +190,18 @@ p {
 }
 
 /* ID selectors */
+#workday-scheduler {
+    background-image: url("../images/workday-scheduler.jpg");
+}
+
+#question-game {
+    background-image: url("../images/question-game.jpg");
+}
+
+#password-generator {
+    background-image: url("../images/password-generator.jpg");
+}
+
 #prework-study-guide {
     background-image: url("../images/prework-study-guide.jpg"); 
 }
