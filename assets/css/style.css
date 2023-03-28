@@ -10,9 +10,11 @@
 }
 
 body {
-    background-color: var(--light);
+    /* background-color: var(--light); */
+    background-color: var(--dark);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--dark);
+    /* color: var(--dark); */
+    color: var(--light);
 }
 
 header {
@@ -23,11 +25,11 @@ header {
 }
 
 header h1 {
-font-size: 250%;
-background-color: var(--contrast);
-margin: 1% 1% 1% 0%;
-padding-left: 4%;
-color: var(--dark);
+    font-size: 250%;
+    background-color: var(--contrast);
+    margin: 1% 1% 1% 0%;
+    padding-left: 4%;
+    color: var(--dark);
 }
 
 header a {
@@ -37,7 +39,8 @@ header a {
     text-decoration: none;
 }
 
-header a::before, header a::after {
+header a::before,
+header a::after {
     content: "-";
     color: var(--dark);
 }
@@ -64,7 +67,7 @@ section {
 
 article {
     display: flex;
-    margin: 3% 0; 
+    margin: 3% 0;
 }
 
 p {
@@ -77,7 +80,7 @@ p {
     height: 15vh;
     margin-bottom: 1%;
     background-image: url("../images/ocean.jpg");
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -86,10 +89,10 @@ p {
 }
 
 .hero-txt {
-  background-color: var(--contrast);
-  color: var(--dark);
-  margin: 0 5% 1% 0;
-  font-size: 175%;
+    background-color: var(--contrast);
+    color: var(--dark);
+    margin: 0 5% 1% 0;
+    font-size: 175%;
 }
 
 .outer-container {
@@ -109,7 +112,7 @@ p {
 .inner {
     margin-left: 3%;
     width: 85%;
-    
+
 }
 
 .inner ul {
@@ -122,14 +125,18 @@ p {
 
 .inner ul a {
     font-size: 105%;
-    color: var(--dark);
-    border-bottom: 1px solid var(--dark);
+    /* color: var(--dark); */
+    color: var(--light);
+    /* border-bottom: 1px solid var(--dark); */
+    border-bottom: 1px solid var(--light);
     text-decoration: none;
 }
 
-.inner ul a::before, .inner ul a::after {
+.inner ul a::before,
+.inner ul a::after {
     content: "-";
-    color: var(--light);
+    /* color: var(--light); */
+    color: var(--dark);
 }
 
 .pic {
@@ -149,13 +156,14 @@ p {
     width: 49.5%;
     height: 10vh;
     margin-bottom: 1%;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border: 3px solid var(--contrast);
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+    transition: transform .2s;
 }
 
 .work-cards:nth-child(1) {
@@ -163,7 +171,8 @@ p {
 }
 
 .work-cards:hover {
-    filter: brightness(1.125)
+    filter: brightness(1.125);
+    transform: scale(1.02);
 }
 
 .work-cards a {
@@ -190,6 +199,14 @@ p {
 }
 
 /* ID selectors */
+#dude-wheres-my-show {
+    background-image: url("../images/dude-wheres-my-show-screenshot.png");
+}
+
+#five-day-forecast {
+    background-image: url("../images/5dayforecast-screenshot.jpg");
+}
+
 #workday-scheduler {
     background-image: url("../images/workday-scheduler.jpg");
 }
@@ -203,19 +220,16 @@ p {
 }
 
 #prework-study-guide {
-    background-image: url("../images/prework-study-guide.jpg"); 
+    background-image: url("../images/prework-study-guide.jpg");
 }
 
 #seo-refactor {
-    background-image: url("../images/seo-refactor.jpg"); 
-}
-
-#coming-soon {
-    background-image: url("../images/coming-soon.jpg");
+    background-image: url("../images/seo-refactor.jpg");
 }
 
 @media only screen and (max-width: 1024px) {
-   /* 769px — 1024px: Small screens, laptops */
+
+    /* 769px — 1024px: Small screens, laptops */
     * {
         font-size: 98%;
     }
@@ -232,15 +246,19 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
+
     /* 320px — 480px: Mobile devices */
     /* 481 - 768: Ipads, Tablets */
     * {
         font-size: 95%;
     }
+
     header {
         flex-wrap: wrap;
     }
-    header h1, nav {
+
+    header h1,
+    nav {
         min-width: 100%;
         justify-content: center;
         text-align: center;
@@ -248,47 +266,59 @@ p {
         padding: 0;
         white-space: normal;
     }
-    header a::before, header a::after {
+
+    header a::before,
+    header a::after {
         content: "";
         color: var(--dark);
     }
+
     header ul li {
         width: 100%;
     }
-        nav {
+
+    nav {
         margin-top: 0;
     }
+
     main {
         margin: 0;
     }
+
     article {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .hero-txt {
         margin: 0 5% 5% 0;
     }
+
     .outer-container {
         width: 100%;
         border-bottom: 4px solid;
         border-right: 0;
         padding-right: 0;
     }
+
     .outer {
         justify-content: center;
         width: 100%;
         font-size: 150%;
         padding-right: 0;
     }
+
     .card-container {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
     .inner {
         width: 95%;
         margin: 2% 0;
     }
+
     .work-cards {
         width: 100%;
     }
