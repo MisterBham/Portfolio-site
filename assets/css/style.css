@@ -199,6 +199,9 @@ p {
 }
 
 /* ID selectors */
+#readme-generator {
+    background-image: url("../images/readme-generator.jpg");
+}
 #dude-wheres-my-show {
     background-image: url("../images/dude-wheres-my-show-screenshot.png");
 }
