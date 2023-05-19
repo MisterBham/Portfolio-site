@@ -1,13 +1,31 @@
-# Porfolio-site
+# Portfolio Site
+![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat)
+![CSS3 Badge](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=flat)
 
-Module 2 Challenge - Professional Portfolio
+## Table of Contents 
+* [Description](#Description) 
 
-![Screenshot of Brian Hamlin's Professional Portfolio webpage](./assets/images/readme-screenshot.jpg)
+* [Usage](#Usage)
 
+* [License](#License) 
+
+* [Contact](#Contact) 
+
+* [Screenshots](#Screenshots) 
+
+### Description
+Showcasing various applications built as a collection, for the purposes of showing my work. 
+
+### Usage
 Link to live application: https://misterbham.github.io/Porfolio-site/
 
-My motivation in this repo is to create a professional portfolio site that I can continually add to as I create more online content. The intent is to feature my skills and talents for prospective employers looking to fill open positions.
+### License
+Further information regarding this specific license can be found via: https://opensource.org/license/mit/. <br>
+![License Badge](https://img.shields.io/badge/License-MIT-yellow.svg) 
 
-This project was built to highlight my work thus far, and the thought processes / purposes that each was built. It will also serve as a showcase that I can build upon for all future work performed. It should very clearly demonstrate how my proficiency have increased over time and show competency.
+### Contact
+You can contact the developer at: misterbham.dev@gmail.com. <br>
+GitHub: <a href="https://github.com/MisterBham">MisterBham</a>
 
-It's already quite interesting to see how one learning can be used in collaboration with another, and how understanding of one syntax can assist with another. I'm excited to learn more and continue growing, and am certain that the complexity / scalability of future projects will grow with time.
+### Screenshots
+![Screenshot of Brian Hamlin's Professional Portfolio webpage](./assets/images/readme-screenshot.jpg)
