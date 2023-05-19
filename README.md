@@ -28,4 +28,4 @@ You can contact the developer at: misterbham.dev@gmail.com. <br>
 GitHub: <a href="https://github.com/MisterBham">MisterBham</a>
 
 ### Screenshots
-![Screenshot of Brian Hamlin's Professional Portfolio webpage](./assets/images/readme-screenshot.jpg)
+![Screenshot of Brian Hamlin's Professional Portfolio webpage](./assets/images/portfolio-site.jpg)
