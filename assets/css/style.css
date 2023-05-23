@@ -199,6 +199,10 @@ p {
 }
 
 /* ID selectors */
+#fusion-fables {
+    background-image: url("../images/fusion-fables.jpg");
+}
+
 #ecom-backend {
     background-image: url("../images/ecom-backend.jpg");
 }
