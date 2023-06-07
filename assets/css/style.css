@@ -199,6 +199,10 @@ p {
 }
 
 /* ID selectors */
+#tech-blog {
+    background-image: url("../images/tech-blog-chirpwithcomments.png");
+}
+
 #fusion-fables {
     background-image: url("../images/fusion-fables.jpg");
 }
