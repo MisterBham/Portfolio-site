@@ -17,7 +17,7 @@
 Showcasing various applications built as a collection, for the purposes of showing my work. 
 
 ### Usage
-Link to live application: https://misterbham.github.io/Porfolio-site/
+Link to live application: [https://misterbham.github.io/Porfolio-site/](https://misterbham.github.io/Portfolio-site/)
 
 ### License
 Further information regarding this specific license can be found via: https://opensource.org/license/mit/. <br>
