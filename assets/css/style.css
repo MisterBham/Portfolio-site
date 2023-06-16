@@ -199,6 +199,10 @@ p {
 }
 
 /* ID selectors */
+#socialmedia-api {
+    background-image: url("../images/socialnetwork-api.jpg");
+}
+
 #tech-blog {
     background-image: url("../images/tech-blog-chirpwithcomments.png");
 }

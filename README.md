@@ -14,7 +14,7 @@
 * [Screenshots](#Screenshots) 
 
 ### Description
-Showcasing various applications built as a collection, for the purposes of showing my work. 
+Presenting various applications built as a collection, for the purposes of showcasing my work. 
 
 ### Usage
 Link to live application: [https://misterbham.github.io/Portfolio-site/](https://misterbham.github.io/Portfolio-site/)
