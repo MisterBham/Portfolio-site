@@ -199,6 +199,10 @@ p {
 }
 
 /* ID selectors */
+#regex-gist {
+    background-image: url("../images/regex-gist.jpg");
+}
+
 #socialmedia-api {
     background-image: url("../images/socialnetwork-api.jpg");
 }
